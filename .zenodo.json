@@ -1,0 +1,18 @@
+{
+  "title": "Materials ML Failure Analysis - Public Research Compendium v1.0.0",
+  "upload_type": "dataset",
+  "description": "Research compendium and evidence archive containing three materials-ML failure-analysis papers, a programme monograph, a public technical and industrial companion, selected accepted evidence, replay summaries and minimal publication-specific reconstruction code. It is not the production Systemica/Geatomica runtime.",
+  "creators": [
+    {
+      "name": "Maxwell, Joseph",
+      "affiliation": "The Systemica Institute, London, United Kingdom",
+      "orcid": "0009-0002-4070-6035"
+    }
+  ],
+  "version": "1.0.0",
+  "publication_date": "2026-08-14",
+  "keywords": ["materials informatics", "feature importance", "model viability", "reproducibility", "evidence assurance"],
+  "access_right": "open",
+  "license": "other-closed",
+  "notes": "Copyright (c) 2026 Joseph Maxwell. All rights reserved unless otherwise stated. No open-source licence is granted for the reference code. The reserved Zenodo DOI for this record is 10.5281/zenodo.21919563."
+}

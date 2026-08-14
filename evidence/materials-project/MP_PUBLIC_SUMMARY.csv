@@ -1,0 +1,10 @@
+measure,value,unit,evidence_state
+source_universe,154377,approximately_records,MEASURED
+elastic_record_target_pairs,26056,pairs,MEASURED
+conditional,23891,pairs,MEASURED
+anomalous_or_unresolved,2165,pairs,MEASURED
+strongest_stable,0,pairs,MEASURED
+fresh_units,64,units,MEASURED
+replay_units,64,units,REPLAYED
+numeric_cells_compared,37924,cells,REPLAYED
+strict_tolerance_exceedances,916,cells,REPLAYED

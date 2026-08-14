@@ -1,0 +1,365 @@
+\documentclass[9pt,a4paper]{article}
+\usepackage[margin=16mm,headheight=14pt]{geometry}
+\usepackage[T1]{fontenc}\usepackage[utf8]{inputenc}
+\usepackage{lmodern,microtype,booktabs,tabularx,longtable,array,xcolor,hyperref,xurl,enumitem,fancyhdr,titlesec}
+\definecolor{navy}{HTML}{16313A}\definecolor{teal}{HTML}{176B68}\definecolor{sand}{HTML}{E8E0D0}\definecolor{pale}{HTML}{F1F6F4}
+\hypersetup{colorlinks=true,linkcolor=teal,urlcolor=teal,pdftitle={Evidence-State Runtime for Computational Engineering},pdfauthor={Joseph Maxwell}}
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\sffamily\scriptsize SYSTEMICA TECHNICAL COMPANION $|$ EVIDENCE-STATE RUNTIME $|$ PUBLIC V1.5}\fancyhead[R]{\sffamily\scriptsize JOSEPH MAXWELL $|$ AUGUST 2026}\fancyfoot[C]{\scriptsize\thepage}
+\titleformat{\section}{\Large\bfseries\sffamily\color{navy}}{\thesection}{0.6em}{}
+\titleformat{\subsection}{\large\bfseries\sffamily\color{teal}}{\thesubsection}{0.5em}{}
+\setlength{\parindent}{0pt}\setlength{\parskip}{4pt}\setlength{\emergencystretch}{2em}
+\setlist[itemize]{leftmargin=*,nosep}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcommand{\callout}[2]{\begin{center}\fcolorbox{teal}{pale}{\begin{minipage}{0.92\linewidth}\textbf{#1}\quad #2\end{minipage}}\end{center}}
+\begin{document}
+\begin{center}
+{\small\sffamily PUBLIC TECHNICAL \& INDUSTRIAL COMPANION $|$ VERSION 1.5}\par\vspace{7mm}
+{\Huge\bfseries\sffamily\color{navy} Evidence-State Runtime}\par\vspace{2mm}
+{\LARGE\bfseries\sffamily\color{teal} for Computational Engineering}\par\vspace{4mm}
+{\large Recoverable execution, scientific memory, replay assurance and detachable AI on workstation-scale hardware}\par\vspace{8mm}
+{\bfseries Joseph Maxwell}\par
+The Systemica Institute, London, United Kingdom\par
+ORCID: \href{https://orcid.org/0009-0002-4070-6035}{0009-0002-4070-6035} $|$ August 2026
+\end{center}
+
+\callout{Core proposition.}{Computational evidence should be treated as a stateful object. A trustworthy workflow records what entered, what executed, what completed, what resumed, what was separately identified as replay, what failed, what is retained as scientific evidence, and what downstream action that evidence has earned.}
+
+\callout{Industrial question.}{Can an organisation prove what happened, recover interrupted work without changing scientific identity, reproduce the relevant decision, contain unsupported output, and show who authorised the next action?}
+
+\callout{This companion in plain language.}{\textbf{Question:} how can a long computational workflow show what actually completed, what safely resumed, what repeated, and what action was authorised? \textbf{What was exercised:} atomic scientific units, interruption recovery, multi-contract replay, separated memory, and human-controlled evidence updates. \textbf{Why it matters:} a successful process exit is not the same as accepted scientific evidence or engineering permission. \textbf{Boundary:} this is local implementation and exercise, not enterprise qualification or a public software distribution.}
+
+\textbf{Three ways to read this companion.} \textbf{Orientation:} read the callouts, the Spatial example, and the Conclusion. \textbf{Operational detail:} read atomic execution, replay, memory, and the furnace example. \textbf{Audit depth:} follow the public receipts and programme registers named in the research compendium.
+
+\textbf{Public implementation boundary.} This companion describes demonstrated control logic and operational evidence without publishing the complete private runtime, policy engines, orchestration logic, storage internals, or commercial integration code. Materials is the demonstrated scientific carrier domain. Cross-domain scientific usefulness remains a transfer hypothesis.
+
+\callout{Current maturity boundary.}{The runtime has been implemented and exercised locally on the reported scientific and engineering workflows. It has not yet undergone an external customer pilot, production qualification, security assessment, enterprise deployment, regulated validation, or controlled economic comparison.}
+
+\textbf{Distribution boundary.} This document describes a public technical surface of a private implementation; it is not itself a public software distribution.
+
+\callout{Why move beyond materials ML?}{Materials ML provides the deepest scientific evidence because its sources, models, controls, metrics, and replay states are inspectable. The engineering cases test a different question: whether the same control principles remain useful when a result changes geometry, topology, fault response, or the next physical test. The first asks whether an interpretation is justified. The second asks what a result is allowed to change next.}
+
+\section{Scientific method and runtime assurance are different}
+A scientific method states what is measured: the source data, cohort, representation, model, split, controls, metrics, and decision rule. Runtime assurance records execution identity, completed units, safe resume, separately identified replay, and the passed comparison contract.
+
+Neither substitutes for the other. A perfectly logged poor method remains poor science. A sound method with missing, duplicated, or ambiguous outputs remains incomplete evidence.
+
+\begin{tabularx}{\textwidth}{p{0.21\textwidth}YY}
+\toprule & Scientific method & Runtime assurance\\\midrule
+Primary question & What is being tested, against what comparator, and under which assumptions? & Did the frozen test execute completely and reproduce under the declared contract?\\
+Typical objects & Dataset, cohort, features, model, hyperparameters, folds, metrics, nulls, thresholds & Execution identity, unit plan, lock, journal, output contract, hashes, terminal seal, replay comparison\\
+Failure example & Leakage, unsuitable target, weak comparator, post-hoc threshold & Partial output, duplicate unit, identity drift, corrupt checkpoint, replay mismatch\\
+Authority & Supports the scientific interpretation only if its design is adequate & Supports only the declared completion/recovery/replay state\\
+\bottomrule
+\end{tabularx}
+
+\callout{Authority rule.}{A weaker evidence state does not inherit the authority of a stronger one merely because both occur in the same workflow.}
+
+\section{Worked public example: exact replay preserves a refusal}
+The final 256-material spatial confirmation tested two predeclared representation questions with Ridge models. For bulk modulus, continuous metric geometry had to exceed both a baseline and a matched sham by at least $0.05$ mean $R^2$ in each of two population views. For shear modulus, polarity information had to exceed geometry and its sham by at least $0.02$ in each view.
+
+The fresh execution committed 576/576 scientific units. A separately identified replay committed another 576/576. All 1,728 corresponding output pairs were byte-identical. Semantic identity passed, and 927,361 numeric cells matched exactly.
+
+\begin{tabularx}{\textwidth}{p{0.18\textwidth}YYYY}
+\toprule Question & Continuity view & Chemical-system view & Frozen decision & Practical reading\\\midrule
+Bulk geometry & $+0.4778$ vs baseline; $+0.5145$ vs sham & $+0.4855$ vs baseline; $+0.5157$ vs sham & PASS both views & Compact metric geometry earned retention for this bounded route.\\
+Shear polarity over geometry & $+0.0123$; below $+0.02$ & $+0.0453$; above $+0.02$ & Conditional; cross-view FAIL & One view could not repair failure in the other.\\
+\bottomrule
+\end{tabularx}
+
+\textbf{Why this matters industrially.} Exact replay proved that the mixed decision itself repeated. It did not grant permission to turn the failed cross-view polarity claim into a universal success. This is the practical purpose of separating execution quality from scientific outcome.
+
+\section{What an organisation can inspect}
+\begin{tabularx}{\textwidth}{p{0.27\textwidth}Y}
+\toprule Operational question & Inspectable answer\\\midrule
+What ran? & Frozen plan plus source, configuration, dependency, and unit identities.\\
+What completed? & Atomic output checks and a terminal evidence state.\\
+What survived interruption? & Verified same-identity continuation, with incomplete units rejected and rerun.\\
+What was separately identified as replay? & A new replay identity with plan, byte, semantic, and numerical comparison states.\\
+What failed or was held? & Preserved adverse evidence, staging, and bounded successor lineage.\\
+What may happen next? & Explicit claim boundary and separately authorised action.\\
+\bottomrule
+\end{tabularx}
+
+\textbf{What this is not.} It is not a replacement for a domain solver, workflow manager, experiment tracker, or quality-management system. It is not an autonomous decision maker. It does not establish regulatory compliance, cyber-security certification, production qualification, enterprise scale, or economic return.
+
+\section{Demonstrated capability surface}
+\begin{longtable}{p{0.16\textwidth}p{0.30\textwidth}p{0.20\textwidth}p{0.25\textwidth}}
+\toprule Functional layer & Demonstrated capability & Evidence maturity & Public evidence boundary\\\midrule
+Scientific execution & Source-specific materials runners and frozen analysis routes & Local scientific exercise & Real execution; replay strength varies by route\\
+Recovery & Atomic completion, verified resume, terminal verification & Local implementation and exercise & Demonstrated in bounded executions\\
+Evidence representation & Immutable evidence references and explicit claim boundaries & Local implementation & Public semantics; private implementation omitted\\
+Candidate outcomes & Retain, exclude, hold, and request-evidence states & Local implementation and exercise & Decision meanings public; engine private\\
+Action authority & Explicit bounded approval or refusal & Local engineering exercise & Human-authorised next action only\\
+Scientific memory & Separately authorised retention of accepted evidence references & Local implementation & Concept/state public; storage internals private\\
+Worker isolation & Scoped workspaces and restricted writes & Local implementation & Boundary public; orchestration internals private\\
+State tracking & Typed transition and trajectory controls & Local engineering exercise & Capability evidenced; full implementation not released\\
+\bottomrule
+\end{longtable}
+
+\section{Evidence-state control model}
+\begin{center}\small\bfseries
+SOURCE MEMORY $\downarrow$ NATIVE DOMAIN EXECUTION $\downarrow$ EXECUTION MEMORY $\downarrow$ CANDIDATE EVIDENCE $\downarrow$ REPLAY / ADJUDICATION $\downarrow$ HELD OR ACCEPTED EVIDENCE $\downarrow$ SEPARATELY AUTHORISED ACTION
+\end{center}
+The domain supplies meanings, admission rules, models, and application thresholds. The portable layer preserves identity, completion, comparison, lineage, and action state around those declared objects.
+
+\begin{tabularx}{\textwidth}{p{0.18\textwidth}YY}
+\toprule State & Entry requirement & Maximum justified use\\\midrule
+Available & A source object exists & Discovery only\\
+Admitted & Provenance, units, methods, and membership satisfy domain rules & Enter the declared analysis\\
+Executed & A unit produced staging output & No completion claim\\
+Committed & Identity, schema, uniqueness, and expected output pass & Measured local evidence\\
+Replay-adjudicated & New identity executes and declared comparisons are evaluated & Only the declared replay state\\
+Held & A required gate fails or remains unresolved & Retain; do not advance\\
+Action-bounded & Human authorisation satisfies scope and evidence boundary & Only the declared next action\\
+\bottomrule
+\end{tabularx}
+
+\section{Atomic execution and recovery}
+The reference design binds source, configuration, dependencies, ordered units, and expected outputs into an execution identity. A unit advances only after its complete output set passes verification. Incomplete staging is never reused as completed evidence.
+
+\begin{tabularx}{\textwidth}{p{0.22\textwidth}YY}
+\toprule Control & Public behaviour & Industrial consequence\\\midrule
+Single writer & One process owns a declared execution & Concurrent processes cannot silently own the same run\\
+Atomic completion & Complete outputs accepted only after validation & Partial files cannot impersonate completion\\
+Hash-linked journal & Checkpoint events bind continuation to prior state & Continuation lineage remains inspectable\\
+Terminal verification & Outputs and receipts rechecked before sealing & Post-run inconsistency remains detectable\\
+Resume & Same unsealed identity; verified units skipped; incomplete units rerun & Interruption does not create a new scientific story\\
+Replay & New identity and predecessor; no predecessor output reuse & Repeatability becomes separately inspectable\\
+Duplicate/output refusal & Missing, duplicate, unexpected, or schema-invalid output fails & Restart cannot silently double-count or accept extras\\
+\bottomrule
+\end{tabularx}
+
+\callout{Operational distinction.}{Resume proves recoverability. Replay tests predecessor-linked repeatability. A resumed run must never be described as a separately identified repeat or external replication.}
+
+\section{Multi-contract replay}
+Reproducibility is not one Boolean flag. A route can be scientifically numerically equivalent while its files differ in serialization, or byte-identical while reproducing a failed scientific threshold.
+
+\begin{tabularx}{\textwidth}{p{0.23\textwidth}YY}
+\toprule Contract & Question & Failure meaning\\\midrule
+Plan identity & Did the same complete ordered workload execute? & Subset, superset, or reordered route\\
+Source/configuration & Were frozen inputs and settings preserved? & Different scientific identity\\
+Schema/coverage & Is every expected object present exactly once? & Incomplete or ambiguous output\\
+Semantic identity & Do values refer to corresponding scientific cells? & Scientifically misaligned comparison\\
+Numerical equivalence & Do numeric cells satisfy the frozen rule? & Numerical replay contract failed\\
+Raw-byte identity & Are payloads byte-identical? & Storage divergence; not automatically scientific divergence\\
+\bottomrule
+\end{tabularx}
+
+\section{Memory separated by authority}
+\begin{tabularx}{\textwidth}{p{0.22\textwidth}YY}
+\toprule Memory class & Contains & What it may define\\\midrule
+Source memory & Dataset identity, cohort, provenance, units, methods & What entered\\
+Execution memory & Plans, checkpoints, receipts, hashes, failures, predecessor & What executed\\
+Scientific evidence memory & Outputs, controls, replay states, holds, claim boundaries & Accepted scientific evidence\\
+Governed persistent memory & References to accepted evidence under separate authorisation & Never more than the source evidence supports\\
+Narrative/working memory & Summaries, discussion, hypotheses, prose, AI interpretation & Orientation only\\
+\bottomrule
+\end{tabularx}
+
+\callout{Governing rule.}{Narrative memory may help reconstruct the work. It cannot overwrite scientific evidence memory.}
+
+\section{Bounded authority and detachable generative AI}
+The negative route is deliberately simple: unsupported request $\rightarrow$ HOLD $\rightarrow$ zero accepted-memory writes $\rightarrow$ no downstream action. The positive route requires verified evidence, explicit human authorisation, bounded persistence, read-back verification, and preserved reversible history.
+
+AI-assisted development is not AI-dependent scientific execution. Conventional fitted models are part of the science. Generative systems may orient, critique, diagnose, or propose, but receive no permission to promote their own output into accepted evidence or engineering action.
+
+\begin{tabularx}{\textwidth}{p{0.23\textwidth}YY}
+\toprule Role & Examples & Authority\\\midrule
+Deterministic control & Identity, validation, receipts, replay rules & Declared rules only\\
+Conventional fitted ML & Ridge, tree models, MLPs & Scientific output under frozen protocol\\
+Optional generative assistance & Orientation, critique, diagnosis, proposals & Advisory; detachable\\
+Human authority & Protocol freeze, interpretation, engineering approval & Final bounded decision\\
+\bottomrule
+\end{tabularx}
+
+\section{Empirical assurance and compute record}
+\begin{longtable}{p{0.20\textwidth}p{0.39\textwidth}p{0.33\textwidth}}
+\toprule Route & Execution/comparison & Observed state\\\midrule
+JARVIS-DFT & 48 fresh + 48 replay; 28,248 cells; 192 files & Maximum delta about $1.07\times10^{-14}$; 60 files byte-divergent; numerical equivalence retained\\
+Materials Project & 64 fresh + 64 replay; 37,924 cells & 916 strict exceedances, all elastic; mixed replay retained\\
+Matbench V0.3 & 3,440 fresh + 3,440 repeat; 65,740 cells & Zero numerical differences; semantic identity pass\\
+Spatial V0.5 & 256 fresh + 256 replay & Byte, semantic, and numerical identity pass\\
+Spatial V0.6.1 & 576 fresh + 576 replay; 1,728 pairs; 927,361 cells & Exact replay; bulk geometry passes both views; shear polarity conditional\\
+\bottomrule
+\end{longtable}
+
+A scientific unit is an evidence boundary, not a fixed amount of computation.
+
+\begin{tabularx}{\textwidth}{p{0.23\textwidth}YY}
+\toprule Route & Measured execution & Interpretation boundary\\\midrule
+JARVIS & About 9.93 h; eight bounded CPU workers & Workstation audit, not provider DFT\\
+Matbench & 19.16 h fresh; 20.60 h repeat; two CPU workers & Complete removal workload; no GPU dependency\\
+Spatial V0.5 & 9.64 min fresh; 9.10 min replay & Smaller factorial study\\
+Spatial V0.6.1 & 20.67 h fresh; 16.20 h replay committed-unit spans & Not launcher-to-terminal wall times\\
+\bottomrule
+\end{tabularx}
+
+Principal workstation: AMD Ryzen 7 5800X, 32 GB RAM, NVIDIA RTX 3060 installed. The reported tabular and Matbench routes were CPU-only where receipts support that statement. Published first-principles-derived records were consumed; provider DFT was not recomputed locally.
+
+\section{Beyond Materials ML: Engineering Execution Witnesses}
+Three earlier studies provide local engineering exercises of case identity, invalid-transition refusal, failure retention, and bounded next-action logic. They did not retrospectively execute the complete present-day implementation.
+
+\begin{tabularx}{\textwidth}{p{0.18\textwidth}YY}
+\toprule Case & Consequential correction or finding & Bounded next action\\\midrule
+Furnace viewport & Correcting 350--375 mm to 35--40 mm invalidated transfer of an inherited 59.2$^\circ$C result; active cooling added a failure dependency & HOLD; test an opaque guarded thermal-interface coupon\\
+Dual tank & Fresh reserve, feeder/recovery, and returned/consumed states had to remain provenance-distinct & HOLD; low-pressure non-potable tracer rig\\
+Heat shield & Segmentation traded thermal performance for fault isolation rather than improving both & HOLD; matched cold-flow/heated coupons including blocked-cell and contained-leak cases\\
+\bottomrule
+\end{tabularx}
+
+Across the cases, 13 candidate objects, five descendants, 116 scenario runs, 9,150 parameter/uncertainty runs, and at least 9,380 model operations narrowed broad concepts to falsifiable tests. These counts show bounded computation, not labour, cost, or calendar savings.
+
+\section{Worked public example: a bounded furnace workflow}
+The furnace viewport study shows how a completed calculation can remain ineligible for fabrication. This is public contract-level semantics, not private orchestration.
+
+\begin{enumerate}[leftmargin=*]
+\item \textbf{Declare the case.} Corrected interface geometry: 35--40 mm. Source assumptions and thermal boundaries are declared. Requested decision: is the concept mature enough to fabricate or test?
+\item \textbf{Bind the computation.} A deterministic thermal model, candidate families, uncertainty/failure scenarios, and expected outputs are declared.
+\item \textbf{Run and retain failure.} Baseline response, contact/seal/emissivity uncertainty, active-cooling-loss, and edge/frame-transfer uncertainty remain visible.
+\item \textbf{Compare predecessor evidence.} The inherited 59.2~$^\circ$C result belonged to a 350--375 mm geometry. The corrected geometry creates a different scientific identity, so the prior result is retained historically but cannot transfer silently.
+\item \textbf{Adjudicate.} The model may be numerically complete while interface and cooling dependencies remain unresolved. Outcome: HOLD.
+\item \textbf{Authorise only the bounded action.} A guarded opaque thermal-interface coupon is authorised; full fabrication, furnace deployment, and qualification are not.
+\end{enumerate}
+
+\begin{verbatim}
+case_id: furnace_viewport_corrected_geometry
+source_state: declared
+geometry_state: corrected_35_40_mm
+execution_state: complete
+uncertainty_state: unresolved_edge_and_cooling_dependency
+prior_result_transfer: refused
+evidence_state: HOLD
+authorised_next_action: guarded_coupon_test
+\end{verbatim}
+
+\textbf{Boundary.} This pseudo-record is illustrative public semantics, not the private production schema or orchestration implementation.
+
+\subsection{How to translate this to another engineering workflow}
+Ask five questions: What exact object is being evaluated? What source or configuration makes this run scientifically distinct? Which failures must remain visible rather than averaged away? Which predecessor evidence may transfer, and what changed enough to break transfer? What is the smallest next action the evidence justifies?
+
+\begin{tabularx}{\textwidth}{YY}
+\toprule Furnace example & Generic engineering translation\\\midrule
+Corrected interface geometry & Changed design/configuration identity\\
+Thermal solver & Native domain solver\\
+Cooling-loss scenario & Declared failure or perturbation case\\
+Inherited 59.2~$^\circ$C result & Predecessor evidence\\
+Transfer refused & Evidence identity mismatch\\
+Coupon test & Bounded next action\\
+\bottomrule\end{tabularx}
+
+\callout{Dual-tank micro-example.}{A numerically successful flow route can still be refused if the state transition itself is invalid.}
+
+\input{FINAL_QA_OPERATIONAL_INSERT.tex}
+
+\section{Practical industrial use patterns}
+\begin{longtable}{p{0.18\textwidth}p{0.26\textwidth}p{0.28\textwidth}p{0.20\textwidth}}
+\toprule Setting & Operational failure & Pilot control pattern & Decision artefact\\\midrule
+R\&D screening & Attractive score advances expensive work too early & Admission, viability, replay, action gates & Retain/hold/request evidence\\
+Overnight compute & Interrupted outputs merged manually & Atomic completion and verified resume & Recovery receipt\\
+Restricted data & Data cannot leave controlled environment & Local native science; optional AI detached & Offline manifest\\
+Multi-tool engineering & Tools disagree about completion & Output contracts and terminal checks & Completeness receipt\\
+AI-assisted teams & Generated summary outruns evidence & Narrative/evidence separation & Claim-boundary record\\
+Safety/cost decisions & Repeat mistaken for permission & Replay separate from human approval & Action authorisation\\
+Incident review & Input-to-decision chain cannot be reconstructed & Source, execution, evidence lineage & Audit pack\\
+\bottomrule
+\end{longtable}
+
+\section{A bounded industrial pilot}
+The defensible first pilot wraps one existing computational or AI-assisted technical workflow. It does not replace the organisation's solver or data system.
+
+\begin{tabularx}{\textwidth}{p{0.08\textwidth}YY}
+\toprule Step & Activity & Deliverable\\\midrule
+1 & Map sources, tools, human roles, and current permission points & Workflow and authority map\\
+2 & Freeze one plan and output contract & Execution identity and baseline manifest\\
+3 & Inject interruption, missing output, and unsupported action & Failure/containment evidence\\
+4 & Resume from verified checkpoints & Recovery receipt and duplicate check\\
+5 & Run a separately identified replay & Byte/semantic/numerical comparison\\
+6 & Exercise HOLD and one explicitly authorised action & Zero-write and positive-route receipts\\
+7 & Measure time, rework, false advancement, and audit effort & Pilot evidence boundary\\
+\bottomrule
+\end{tabularx}
+
+\textbf{Pilot success criterion.} Demonstrate bounded controls on one declared workflow and measure overhead against its existing practice. Do not claim universal safety, enterprise ROI, or regulatory compliance.
+
+\section{Integration, trust, and observability boundaries}
+The intended integration model does not require an existing workflow to adopt Systemica scientific models. A bounded integration maps the workflow into source/configuration identity, expected outputs, comparison rules, and action boundaries while leaving domain computation native.
+
+\begin{tabularx}{\textwidth}{p{0.23\textwidth}YY}
+\toprule Risk/need & Present public-facing control & Still required for production\\\midrule
+Corrupt payload & Schema, contract, hash verification & Storage hardening and monitored integrity\\
+Concurrent writer & Single-writer ownership & Host/process identity policy\\
+Dependency drift & Dependency identity & SBOM, signed builds, vulnerability response\\
+Credential exposure & Local bounded operation & Secret policy, rotation, audit\\
+Malicious worker & Scoped work, no self-promotion & Sandbox hardening and least privilege\\
+Audit tampering & Hash-linked receipts, immutable packs & External signature or WORM anchoring\\
+Progress/capacity & Unit/checkpoint telemetry, bounded workers & Common telemetry, memory-aware cross-run scheduling\\
+Scale & Local CPU execution & Common GPU, cluster, cloud, distributed service\\
+\bottomrule
+\end{tabularx}
+
+Evidence integrity is not cyber-security. Current evidence does not establish penetration-tested security, air-gap qualification, export-control compliance, enterprise access management, or regulatory certification.
+
+\section{Measuring industrial value}
+The controls are demonstrated; economic value is not yet measured. A serious pilot establishes a comparator before claiming savings.
+
+\begin{tabularx}{\textwidth}{p{0.23\textwidth}YY}
+\toprule Measure & Operational definition & Why it matters\\\midrule
+Time to recover & Interruption to next verified committed unit & Resilience\\
+Rework avoided & Verified units safely skipped & Retained compute/labour\\
+False advancements blocked & Unsupported outputs prevented from accepted state & Decision-risk control\\
+Audit reconstruction time & Time to rebuild input-plan-output-action chain & Assurance overhead\\
+Escalation precision & Cases sent to higher fidelity versus held/rejected & Compute/test allocation\\
+Decision latency & Evidence arrival to authorised next action & Throughput\\
+Operator burden & Review minutes and unresolved exceptions & Prevents hidden automation overhead\\
+\bottomrule
+\end{tabularx}
+
+No claim of ROI, labour saved, production throughput, or reduced engineering error is supported until these measures are collected against a conventional comparator.
+
+\section{Adoption path and open gates}
+\begin{tabularx}{\textwidth}{p{0.19\textwidth}YY}
+\toprule Stage & Minimum capability & Value added\\\midrule
+Observe & Stable IDs and source/config capture & Know who ran what\\
+Contract & Expected outputs and atomic completion & Partial files stop impersonating completion\\
+Recover & Journal and verified resume & Continuation without identity ambiguity\\
+Replay & New identity and multi-contract comparison & Repeatability becomes inspectable\\
+Separate memory & Source, execution, evidence, narrative classes & Interpretation cannot overwrite science\\
+Gate action & Evidence boundary and human approval & Computation stops becoming permission\\
+Optional AI & Bounded proposal/diagnosis interface & Acceleration without control of scientific state\\
+\bottomrule
+\end{tabularx}
+
+Open gates include cross-platform replay, a common recovery adapter across runners, matched comparison with established workflow systems, a prospective customer pilot, a second scientific domain, security qualification, tensor/method-resolved Materials Project elasticity, common continuous telemetry, and measured operational value.
+
+\section{Conclusion}
+The Evidence-State Runtime is an assurance architecture around scientific computation, not another scheduler and not yet a universal production platform. It makes identity, completion, recovery, replay, memory, failure, and action permission separately inspectable.
+
+Its practical industrial proposition is incremental. Existing scientific and AI-assisted workflows can be wrapped so that interruption, repeatability, retained evidence, and human permission cease to be implicit. The system does not make every computation trustworthy. It makes the state of a computation clear enough that trust and escalation need not be inferred from successful termination alone.
+
+\callout{Bottom line.}{Preserve the work. Preserve the failure. Preserve the distinction between evidence and permission.}
+
+\textbf{If you remember one thing:} the runtime should make the earned evidence state visible without allowing execution, replay, AI assistance, or narrative confidence to authorise a stronger action automatically.
+
+\section*{References}
+\small
+1. Koster, J. and Rahmann, S. Snakemake---a scalable bioinformatics workflow engine. \emph{Bioinformatics} 28, 2520--2522 (2012).\\
+2. Di Tommaso, P. et al. Nextflow enables reproducible computational workflows. \emph{Nature Biotechnology} 35, 316--319 (2017).\\
+3. Amstutz, P. et al. Common Workflow Language, v1.0. Specification (2016).\\
+4. Lebo, T. et al. PROV-O: The PROV Ontology. W3C Recommendation (2013).\\
+5. Soiland-Reyes, S. et al. Packaging research artefacts with RO-Crate. \emph{Data Science} 5, 97--138 (2022).\\
+6. Wilkinson, M. D. et al. The FAIR Guiding Principles. \emph{Scientific Data} 3, 160018 (2016).\\
+7. Tabassi, E. Artificial Intelligence Risk Management Framework (AI RMF 1.0). NIST AI 100-1 (2023).\\
+8. Peng, R. D. Reproducible research in computational science. \emph{Science} 334, 1226--1227 (2011).
+
+\section*{Declarations and evidence boundary}
+\textbf{Funding.} This research was conducted independently without dedicated external research grant funding.
+
+\textbf{Competing interests.} The author is founder of a venture developing software and services related to scientific evidence assurance and engineering decision support described in this work.
+
+\textbf{AI assistance.} AI and coding tools assisted code development, critique, diagnosis, evidence organisation, and manuscript preparation. They did not generate source target data. Frozen analyses were executed by conventional scientific software under declared protocols, and scientific interpretations and conclusions were reviewed by the author. Optional generative systems may orient, critique, diagnose, or propose, but they are not permitted to promote their own outputs into accepted scientific evidence or engineering action.
+
+\textbf{Author contribution.} Joseph Maxwell is the sole human author and research lead of the reported programme.
+
+\textbf{Public disclosure boundary.} This companion intentionally omits the complete private runtime, proprietary orchestration, internal persistence transactions, general policy engines, and reusable commercial integration source. It does not authorise deployment, scientific promotion, regulatory claims, or customer-performance claims.
+
+\end{document}

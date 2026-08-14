@@ -1,0 +1,32 @@
+﻿[
+    {
+        "Name":  "EVIDENCE_STATE_RUNTIME_PUBLIC_TECHNICAL_INDUSTRIAL_COMPANION_V1_5_A4.pdf",
+        "Length":  402889,
+        "SHA256":  "79fa8f5baae60035f778ef4d1ea22c6e159df9585f2ed93a3b746014170dc835"
+    },
+    {
+        "Name":  "GEATOMICA_FLAGSHIP_MONOGRAPH_PUBLIC_FINAL_QA_V3.pdf",
+        "Length":  1241582,
+        "SHA256":  "b8ed98ecd47ae86464e3523df2f83faff07923e62355ee091f2d94bd91a192c5"
+    },
+    {
+        "Name":  "MATERIALS_ML_FAILURE_ANALYSIS_WHAT_IT_IS_V2.pdf",
+        "Length":  263027,
+        "SHA256":  "59cdb1c216bb176b0358f3acdc2670a707b0d1098e4eb74ceea414d6da83d6e3"
+    },
+    {
+        "Name":  "PAPER_1_IMPORTANCE_IS_NOT_NECESSITY_PUBLIC_FINAL_QA_V4.pdf",
+        "Length":  525322,
+        "SHA256":  "1ea1247f5fd39b648ce4cdfdfff3e7425f76e7f432a218f2fb544970a308e42d"
+    },
+    {
+        "Name":  "PAPER_2_BETTER_THAN_NULL_IS_NOT_YET_USEFUL_PUBLIC_FINAL_QA_V4.pdf",
+        "Length":  491253,
+        "SHA256":  "8718c1755aa3947bafd6974c7ffa99d965692c6cae6f4be1d5166669d3cfd183"
+    },
+    {
+        "Name":  "PAPER_3_AVAILABLE_EVIDENCE_IS_NOT_ENGINEERING_AUTHORITY_PUBLIC_FINAL_QA_V3.pdf",
+        "Length":  477838,
+        "SHA256":  "43044152b17854f0f611b2703ee0eb9e631afe2cf679018a21e6808bda813780"
+    }
+]

@@ -1,0 +1,63 @@
+\section{Publicly evidenced programme scale}
+
+A scientific unit is the smallest contract-bound piece of a declared experiment that the runtime is allowed to call complete on its own. It binds the scientific coordinates, expected outputs, and execution identity. It commits only after required outputs exist, identities and schemas validate, and the commit completes atomically. A unit is not a fixed amount of computation: it may contain one estimator fit, several fits, target-permutation controls, a representation comparison, or a solver/scenario calculation. Unit counts therefore measure accepted scientific boundaries, not FLOPs, CPU-hours, or model fits.
+
+\begin{longtable}{L{0.14\textwidth}L{0.09\textwidth}L{0.10\textwidth}L{0.10\textwidth}L{0.31\textwidth}L{0.16\textwidth}}
+\toprule
+\textbf{Route} & \textbf{Fresh} & \textbf{Repeat/ replay} & \textbf{Unit executions} & \textbf{Additional estimator or comparison work} & \textbf{Time evidence}\\\midrule
+JARVIS & 48 & 48 & 96 & 28,248 numeric cells; 192 file pairs & approximately 9.93 h fresh\\
+Materials Project & 64 & 64 & 128 & 37,924 cells; 916 strict elastic exceedances & total comparable time unresolved\\
+Matbench V0.2 & 20 & 0 & 20 & one baseline + five null fits per unit; 120 fits & 29 min 40 s elapsed\\
+Matbench V0.3 & 3,440 & 3,440 & 6,880 & 6,880 fits; 5,680 individual and 1,160 group removal refits across both identities; 65,740 cells & 19.16 / 20.60 h\\
+Spatial V0.5 & 256 & 256 & 512 & byte, semantic, numeric identity PASS & 9.64 / 9.10 min\\
+Spatial V0.6.1 & 576 & 576 & 1,152 & 1,152 Ridge fits; 864 null fits; 1,728 output pairs; 927,361 cells & 20.67 / 16.20 h committed spans\\
+Other sealed spatial predecessors & 28 & 20 & 48 & V0.1--V0.4 retained as distinct routes & route-specific receipts\\\midrule
+\textbf{Totals} & \textbf{4,432} & \textbf{4,404} & \textbf{8,836} & Unlike objects are not summed & ---\\\bottomrule
+\end{longtable}
+
+The 4,404 later executions comprise 3,440 same-environment repeat units and 964 predecessor-linked replay units. At least 1,059,273 explicitly counted numeric fresh-to-repeat/replay comparison cells were adjudicated across routes exposing comparable counts. This is not the total number of calculations performed. Approximately 230,370 provenance-separated JARVIS plus Materials Project source records were touched (75,993 plus approximately 154,377). Matbench contributes 260,839 task-record instances, not unique materials and not an additive source census.
+
+\section{Scientific-unit anatomy}
+Matbench V0.2 gives the simplest distinction between units and fits: 20 official-fold units each contained one baseline fit and five target-permutation null fits. Thus \textbf{20 scientific units represented 120 estimator fits}. In Matbench V0.3, each of 3,440 task--fold--operation units contained a complete fit with fold-local imputation and scaling: 20 baseline/perturbation, 2,840 individual removal, and 580 group removal units. Spatial V0.6.1 bound target, population view, fold, representation, and target state: 144 valid plus 432 paired-null units per execution.
+
+\begin{figure}[H]\centering
+\begin{tikzpicture}[node distance=5mm,every node/.style={align=center,font=\small},stage/.style={draw=geoBlue,rounded corners,fill=geoLight,text width=11.2cm,minimum height=0.8cm}]
+\node[stage] (a) {Declared scientific unit: source + task + split/fold + model/representation + seed/condition};
+\node[stage,below=of a] (b) {Execution-local staging};
+\node[stage,below=of b] (c) {Expected file, schema, identity, and hash checks};
+\node[stage,below=of c] (d) {Invalid/incomplete $\rightarrow$ retain failure and recompute unit};
+\node[stage,below=of d] (e) {Valid $\rightarrow$ atomic commit $\rightarrow$ journal/checkpoint advance};
+\node[stage,below=of e] (f) {Unit may contribute to terminal evidence};
+\foreach \x/\y in {a/b,b/c,c/d,d/e,e/f}{\draw[-{Latex[length=2.5mm]},thick] (\x)--(\y);}
+\end{tikzpicture}
+\caption{Only complete contract-valid units advance accepted execution state. A visible partial file is not evidence that the scientific unit completed.}
+\end{figure}
+
+\begin{governingrule}[Verified continuation]
+Resume from the last verified scientific boundary, not from the last visible file.
+\end{governingrule}
+
+\section{Observed continuity and recovery}
+The JARVIS replay was interrupted and resumed under the same execution identity; an incomplete staging unit was rejected and recomputed rather than merged or duplicated. The Materials Project replay also used a later resume launch while retaining only verified complete units. Separately, a controlled-fixture recovery matrix terminated real child processes at 11 declared fault boundaries and recovered each fixture to three unique committed units. These are controller fault-injection results, not 11 scientific experiments. A reported JARVIS zero-commit launch-envelope failure was not promoted into this measured register because a definitive run-local receipt was not isolated.
+
+Fresh means a new identity with no predecessor work reused. Resume continues the same identity from verified commits. Repeat is a separately identified execution under the declared same environment where applicable. Replay is a new predecessor-linked identity compared under declared contracts. \textbf{Resume is not replication. Replay is not automatically external replication.}
+
+\section{Calendar time, active execution, and a shared workstation}
+The principal workstation was a shared personal machine rather than a dedicated compute node. Jobs were scheduled around ordinary availability, so calendar duration is much longer than active execution spans. The workstation remained available for ordinary use during parts of the programme; background load was uncontrolled and is not a performance benchmark.
+
+Elapsed run time is launcher/process duration where a terminal receipt supports it. Summed unit wall time adds unit durations and can exceed elapsed time under parallelism. Committed-unit span runs from first to final accepted commit and can exclude setup or packaging. Calendar elapsed includes review, interruption, ordinary use, and unknown gaps and must not be called runtime. Spatial V0.6.1's 20.67 h fresh and 16.20 h replay values are committed-unit spans.
+
+\begin{center}\small\ttfamily
+[RUN] -- [ordinary use/review] -- [RUN] -- [interrupt/checkpoint] -- [unavailable] -- [RESUME/RUN] -- [review] -- [REPLAY]
+\end{center}
+Scientific identity follows committed evidence, not continuous ownership of the computer.
+
+\section{Replay does not update accepted science by itself}
+Execution completion may update execution memory. It must not automatically upgrade the scientific claim. A chronologically separate post-replay demonstration first submitted an eligible claim without human confirmation: the gate refused it and wrote zero accepted scientific-memory objects. Explicit founder adjudication then wrote and read back exactly two bounded local claims: Matbench fitted-use versus retrained-removal disagreement under same-environment repeat, and Spatial bulk metric geometry under exact cross-view local replay. Engineering action remained NONE.
+
+Attempts to strengthen Spatial shear polarity and Materials Project elasticity beyond their ceilings were refused with zero positive promotions. Spatial shear remained conditional because replay exactly reproduced the cross-view failure; Materials Project elasticity retained its mixed replay and admission HOLD.
+
+\begin{center}\small\bfseries
+EXECUTION $\rightarrow$ COMPARISON $\rightarrow$ MACHINE CANDIDATE $\rightarrow$ HUMAN ADJUDICATION $\rightarrow$ BOUNDED MEMORY UPDATE OR HOLD $\rightarrow$ READ-BACK
+\end{center}
+The human controls the evidence-state transition, not merely manuscript wording. A scientific-memory update is not fabrication, deployment, qualification, or regulatory permission.

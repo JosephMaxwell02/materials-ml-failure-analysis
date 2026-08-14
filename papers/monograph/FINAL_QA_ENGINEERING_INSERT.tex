@@ -1,0 +1,37 @@
+\section{What was actually engineered and modelled}
+
+The three engineering studies were bounded pre-experimental calculations, not architecture demonstrations wearing engineering labels. They began with physical design questions and ended with smaller physical tests.
+
+\begin{longtable}{L{0.11\textwidth}L{0.19\textwidth}L{0.25\textwidth}L{0.23\textwidth}L{0.15\textwidth}}
+\toprule
+\textbf{Case} & \textbf{Physical object} & \textbf{Native model} & \textbf{Principal failure discovered} & \textbf{Bounded next test}\\\midrule
+Furnace & High-temperature viewport/thermal interface & Deterministic dominant-path thermal screening with uncertainty and fault sweeps & Corrected geometry invalidated inherited evidence; cooling created a dependency; edge/frame transfer remained unresolved & Guarded opaque thermal-interface coupon\\
+Dual tank & Reserve/feeder/recovery topology & Lumped flow/state model with typed topology and transition validation & Recovered water had been collapsed into reserve; invalid return routes remained possible & Low-pressure non-potable tracer rig\\
+Heat shield & Segmented transpiration/fault-containment coupon & Transient cell thermal network with Darcy-style flow and topology/fault checks & Maximum nominal cooling and fault localisation diverged & Matched cold-flow/heated blocked/leak coupons\\
+\bottomrule
+\end{longtable}
+
+These are bounded screening and pre-experimental engineering instruments, not physical validation of the proposed systems.
+
+\subsection{Furnace thermal enclosure and viewport interface}
+The engineered object was a brazing-furnace thermal enclosure and removable optical/thermal viewport interface intended to provide process visibility without allowing the optical path to dominate external heat transfer or compromise the surrounding thermal boundary. The corrected intended interface envelope was 35--40 mm, not the inherited 350--375 mm. The previously reported 59.2~$^\circ$C cold-side result was retained historically but refused for current design authority because it belonged to the wrong geometry identity.
+
+The executed bounded model used deterministic dominant-path thermal-resistance screening, candidate-specific heat paths, six model/fault scenarios, 9,000 deterministic uncertainty samples, and 9,120 model operations. Variables included emissivity, hot-side boundary, contact resistance, wall depth, seal/interface assumptions, aperture, cooling-loss behaviour, and unresolved edge/frame transfer. F-A was a minimum-complexity single-pane control; F-B separated functions with a passive double-pane/cavity; F-C tested active cooling; F-A1 and F-B1 were descendants created after weaknesses appeared.
+
+The second pane/cavity improved the declared central cold-side path, and a smaller aperture improved the pressure screen. Active cooling improved nominal temperature while adding a failure dependency. Variation across 35--40 mm did not remove the dominant optical path in this lightweight model, and edge/frame transfer remained unresolved. The engineering value was the conversion of an incorrectly inherited geometry and broad idea into traceable candidate families, quantified uncertainty, explicit failure dependencies, and a guarded coupon targeting the unresolved paths. It was not a validated final viewport.
+
+\subsection{Dual-tank provenance and recovery topology}
+The physical object was a multi-reservoir water distribution and recovery topology separating clean make-up reserve, live feeder/recovery flow, unused return, consumed water, and contained/rejected states while buffering demand. The correction made R the isolated new-source reserve and F the live feeder/recovery tank. Only declared unused return could pass a quality gate into F; consumed water exited; excess remained contained. Source provenance, age/residence, return history, and gate history were kept distinct because equal level or pressure does not imply equal reuse history.
+
+The executed model combined lumped flow/state simulation, typed topology, candidate-specific transition validation, 26 scenarios, and 70 parameter cases. Forbidden routes were rejected before execution. W-B2 scored 33/35 under the exploratory screen; W-B4 was generated after W-B2 failed the peak criterion and scored 34/35. Its worst service-margin failure improved from $-0.266$ to $-0.090$ under those assumptions. These are not final sizing values.
+
+The engineering contribution was correction of the physical state topology. Recirculation could recondition water without making it new-source water; capacity and provenance integrity remained different objectives. Final size, hygiene, pressure losses, water quality, and component ratings remain unresolved. The next action was a transparent low-pressure non-potable tracer rig measuring provenance, residence, and fault containment.
+
+\subsection{Segmented transpiration heat-shield coupon}
+The engineered object was a segmented porous/transpiration thermal-management ground coupon in which coolant delivery, thermal response, and cell-level fault containment were competing objectives. The model coupled a two-node-per-cell transient thermal network, Darcy-style permeability/restriction flow, structural topology, and transition/fault-route validation. It executed 84 scenarios and 80 parameter cases across six candidate/control objects, generated two descendants, and rejected four unsupported route classes.
+
+Thermal nodes approximated coupon heat storage and transfer; restricted flow represented the porous delivery path; segmentation tested whether blockage or leakage remained local. H-A1, the monolithic route, carried the strongest nominal thermal signal with a temperature-reduction range of 175.3--389.5 K. H-B1, the segmented descendant, traded thermal response for isolation and maintenance information; its range included $-83.5$ to 245.4 K. Segmentation was therefore not a free improvement.
+
+The model did not resolve pore-scale convection, choking or compressibility, external film formation, spectral radiation, oxidation, erosion or ablation, detailed contacts, or flight aerothermodynamics. Its value was to produce a falsifiable matched-coupon sequence: no-flow control, simple thermal/permeability route, segmented fault-isolation route, blocked-cell case, and contained-leak case. No qualification or flight readiness followed.
+
+The technical contribution here is the design synthesis and engineering reduction demonstrated within the programme, not a claim of literature-level novelty for every physical mechanism.

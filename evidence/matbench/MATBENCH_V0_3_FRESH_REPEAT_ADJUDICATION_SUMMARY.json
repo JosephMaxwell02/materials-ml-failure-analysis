@@ -1,0 +1,26 @@
+{
+  "accepted_evidence_memory_writes": 0,
+  "claim_ceiling": "same_environment_local_fresh_repeat_scientific_equivalence_and_descriptor_response_only",
+  "decision": "MATBENCH_V0_3_FRESH_REPEAT_SCIENTIFIC_ADJUDICATION_PASS",
+  "fresh_runtime": {
+    "commit_to_terminal_hours": 19.161149304722223,
+    "median_unit_seconds": 22.409431699994457,
+    "p95_unit_seconds": 124.8908316750014,
+    "summed_unit_wall_hours": 37.93695698861113
+  },
+  "frozen_numerical_equivalence_pass_units": 3440,
+  "maximum_absolute_difference": 0.0,
+  "maximum_relative_difference": 0.0,
+  "numeric_cells_compared": 65740,
+  "numeric_differences_above_1e_10": 0,
+  "numeric_differences_above_zero": 0,
+  "raw_byte_identity_pass_units": 0,
+  "repeat_runtime": {
+    "commit_to_terminal_hours": 20.598560879166666,
+    "median_unit_seconds": 21.05761039999925,
+    "p95_unit_seconds": 122.81149532999544,
+    "summed_unit_wall_hours": 40.73179002097202
+  },
+  "semantic_metadata_identity_pass_units": 3440,
+  "units_compared": 3440
+}

@@ -1,0 +1,5 @@
+question,target,split_view,primary_effect,sham_control_effect,positive_effect_folds,required_effect,global_non_null_viability,decision
+bulk_C_confirmation,bulk_modulus_kv,chemical_system_group_4fold,0.48547840321623287,0.5156968323129756,4,0.05,True,PASS
+shear_E_over_C_confirmation,shear_modulus_gv,chemical_system_group_4fold,0.045283028173095485,0.07013695556157384,4,0.02,True,PASS
+bulk_C_confirmation,bulk_modulus_kv,jid_order_contiguous_4fold,0.47783739385022084,0.5145272923930047,4,0.05,True,PASS
+shear_E_over_C_confirmation,shear_modulus_gv,jid_order_contiguous_4fold,0.012283654139171984,0.06323436800512983,3,0.02,True,FAIL

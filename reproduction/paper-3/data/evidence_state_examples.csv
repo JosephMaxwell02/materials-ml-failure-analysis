@@ -1,0 +1,5 @@
+case,available,admitted,viable,replayed,bounded_disposition_recorded,disposition
+MP admission,1,0,NA,1,1,HOLD
+MP elastic viability,1,CONDITIONAL,0,0,1,HOLD
+Spatial bulk geometry,1,1,1,1,1,BOUNDED_PASS
+Spatial shear polarity,1,1,MIXED,1,1,CONDITIONAL

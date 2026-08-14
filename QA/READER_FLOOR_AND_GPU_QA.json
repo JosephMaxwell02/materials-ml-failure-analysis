@@ -1,0 +1,65 @@
+{
+  "schema_version": "materials_ml.reader_floor_gpu_qa.v1",
+  "created_at": "2026-08-14T13:01:09.589745+00:00",
+  "pdf_identity_checks": [
+    {
+      "object": "paper-1",
+      "staging_pdf": "papers/paper-1/PAPER_1_IMPORTANCE_IS_NOT_NECESSITY_FINAL.pdf",
+      "hash_match": true,
+      "pages": 8,
+      "a4_portrait": true
+    },
+    {
+      "object": "paper-2",
+      "staging_pdf": "papers/paper-2/PAPER_2_BETTER_THAN_NULL_IS_NOT_YET_USEFUL_FINAL.pdf",
+      "hash_match": true,
+      "pages": 7,
+      "a4_portrait": true
+    },
+    {
+      "object": "paper-3",
+      "staging_pdf": "papers/paper-3/PAPER_3_AVAILABLE_EVIDENCE_IS_NOT_ENGINEERING_AUTHORITY_FINAL.pdf",
+      "hash_match": true,
+      "pages": 8,
+      "a4_portrait": true
+    },
+    {
+      "object": "monograph",
+      "staging_pdf": "papers/monograph/GEATOMICA_FLAGSHIP_MONOGRAPH_FINAL.pdf",
+      "hash_match": true,
+      "pages": 149,
+      "a4_portrait": true
+    },
+    {
+      "object": "technical-companion",
+      "staging_pdf": "papers/technical-companion/EVIDENCE_STATE_RUNTIME_PUBLIC_TECHNICAL_INDUSTRIAL_COMPANION_V1_5_A4.pdf",
+      "hash_match": true,
+      "pages": 11,
+      "a4_portrait": true
+    },
+    {
+      "object": "explainer",
+      "staging_pdf": "papers/explainer/MATERIALS_ML_FAILURE_ANALYSIS_WHAT_IT_IS_V2.pdf",
+      "hash_match": true,
+      "pages": 6,
+      "a4_portrait": true
+    }
+  ],
+  "all_pdf_hashes_match": true,
+  "anchor_checks": {
+    "paper_1_box": true,
+    "paper_2_box": true,
+    "paper_3_box": true,
+    "hardware": true
+  },
+  "scan": {
+    "rtx_3060_ti_hits": 0,
+    "private_estate_path_hits": 0,
+    "private_key_blocks": 0,
+    "github_token_patterns": 0,
+    "openai_key_patterns": 0
+  },
+  "scientific_rerun": "NONE",
+  "publication_action": "NONE",
+  "state": "PASS"
+}

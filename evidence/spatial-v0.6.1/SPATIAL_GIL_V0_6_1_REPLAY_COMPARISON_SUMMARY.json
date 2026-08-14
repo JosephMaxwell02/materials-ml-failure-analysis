@@ -1,0 +1,130 @@
+{
+  "assessment_state": "SPATIAL_GIL_V0_6_1_CONFIRMATION_COMPLETED_SEALED_AND_REPLAYED",
+  "errors": [],
+  "fresh_decisions": [
+    {
+      "decision": "PASS",
+      "global_non_null_viability": true,
+      "positive_effect_folds": 4,
+      "primary_effect": 0.48547840321623287,
+      "question": "bulk_C_confirmation",
+      "required_effect": 0.05,
+      "sham_control_effect": 0.5156968323129756,
+      "split_view": "chemical_system_group_4fold",
+      "target": "bulk_modulus_kv"
+    },
+    {
+      "decision": "PASS",
+      "global_non_null_viability": true,
+      "positive_effect_folds": 4,
+      "primary_effect": 0.045283028173095485,
+      "question": "shear_E_over_C_confirmation",
+      "required_effect": 0.02,
+      "sham_control_effect": 0.07013695556157384,
+      "split_view": "chemical_system_group_4fold",
+      "target": "shear_modulus_gv"
+    },
+    {
+      "decision": "PASS",
+      "global_non_null_viability": true,
+      "positive_effect_folds": 4,
+      "primary_effect": 0.47783739385022084,
+      "question": "bulk_C_confirmation",
+      "required_effect": 0.05,
+      "sham_control_effect": 0.5145272923930047,
+      "split_view": "jid_order_contiguous_4fold",
+      "target": "bulk_modulus_kv"
+    },
+    {
+      "decision": "FAIL",
+      "global_non_null_viability": true,
+      "positive_effect_folds": 3,
+      "primary_effect": 0.012283654139171984,
+      "question": "shear_E_over_C_confirmation",
+      "required_effect": 0.02,
+      "sham_control_effect": 0.06323436800512983,
+      "split_view": "jid_order_contiguous_4fold",
+      "target": "shear_modulus_gv"
+    }
+  ],
+  "frozen_numerical_equivalence": {
+    "count_above_tolerance": 0,
+    "count_above_zero": 0,
+    "maximum_absolute_difference": 0.0,
+    "maximum_relative_difference": 0.0,
+    "numeric_cells_compared": 927361,
+    "special_numeric_class_changes": 0,
+    "status": "PASS",
+    "tolerance": 1e-10
+  },
+  "independently_recomputed_decisions_exact": true,
+  "raw_byte_identity": {
+    "byte_divergent_outputs": 0,
+    "outputs_compared": 1728,
+    "status": "PASS"
+  },
+  "replay_decisions": [
+    {
+      "decision": "PASS",
+      "global_non_null_viability": true,
+      "positive_effect_folds": 4,
+      "primary_effect": 0.48547840321623287,
+      "question": "bulk_C_confirmation",
+      "required_effect": 0.05,
+      "sham_control_effect": 0.5156968323129756,
+      "split_view": "chemical_system_group_4fold",
+      "target": "bulk_modulus_kv"
+    },
+    {
+      "decision": "PASS",
+      "global_non_null_viability": true,
+      "positive_effect_folds": 4,
+      "primary_effect": 0.045283028173095485,
+      "question": "shear_E_over_C_confirmation",
+      "required_effect": 0.02,
+      "sham_control_effect": 0.07013695556157384,
+      "split_view": "chemical_system_group_4fold",
+      "target": "shear_modulus_gv"
+    },
+    {
+      "decision": "PASS",
+      "global_non_null_viability": true,
+      "positive_effect_folds": 4,
+      "primary_effect": 0.47783739385022084,
+      "question": "bulk_C_confirmation",
+      "required_effect": 0.05,
+      "sham_control_effect": 0.5145272923930047,
+      "split_view": "jid_order_contiguous_4fold",
+      "target": "bulk_modulus_kv"
+    },
+    {
+      "decision": "FAIL",
+      "global_non_null_viability": true,
+      "positive_effect_folds": 3,
+      "primary_effect": 0.012283654139171984,
+      "question": "shear_E_over_C_confirmation",
+      "required_effect": 0.02,
+      "sham_control_effect": 0.06323436800512983,
+      "split_view": "jid_order_contiguous_4fold",
+      "target": "shear_modulus_gv"
+    }
+  ],
+  "semantic_metadata_identity": {
+    "dtype_class_differences": 0,
+    "duplicate_rows_or_keys": 0,
+    "identity_checks": {
+      "code_sha256": true,
+      "configuration_sha256": true,
+      "dataset_sha256": true,
+      "dependency_sha256": true,
+      "unit_plan_sha256": true
+    },
+    "missing_cells": 0,
+    "nonnumeric_differences": 0,
+    "ordering_differences": 0,
+    "output_coverage_exact": true,
+    "plan_exact": true,
+    "schema_differences": 0,
+    "status": "PASS"
+  }
+}

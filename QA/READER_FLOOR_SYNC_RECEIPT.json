@@ -1,0 +1,272 @@
+{
+  "schema_version": "materials_ml.reader_floor_public_staging_sync.v1",
+  "created_at": "2026-08-14T13:01:30.265018+00:00",
+  "state": "SYNCED_LOCAL_STAGING_NOT_PUBLISHED",
+  "source_workspace": "materials-ml-failure-analysis-final-operational-qa-v1-20260814",
+  "destination": "materials-ml-failure-analysis",
+  "backup": "local staging workspace backup; excluded from candidate repository",
+  "copied_objects": [
+    {
+      "source": "PAPER_1/PAPER_1_IMPORTANCE_IS_NOT_NECESSITY_PUBLIC_FINAL_QA_V4.tex",
+      "destination": "papers/paper-1/PAPER_1_IMPORTANCE_IS_NOT_NECESSITY_FINAL.tex",
+      "sha256": "83ba32772a6cc2eea24dc6bf0dee6e37db5e3c682849d565b0e4816723feb139",
+      "bytes": 22607
+    },
+    {
+      "source": "PAPER_1/PAPER_1_IMPORTANCE_IS_NOT_NECESSITY_PUBLIC_FINAL_QA_V4.pdf",
+      "destination": "papers/paper-1/PAPER_1_IMPORTANCE_IS_NOT_NECESSITY_FINAL.pdf",
+      "sha256": "1ea1247f5fd39b648ce4cdfdfff3e7425f76e7f432a218f2fb544970a308e42d",
+      "bytes": 525322
+    },
+    {
+      "source": "PAPER_2/PAPER_2_BETTER_THAN_NULL_IS_NOT_YET_USEFUL_PUBLIC_FINAL_QA_V4.tex",
+      "destination": "papers/paper-2/PAPER_2_BETTER_THAN_NULL_IS_NOT_YET_USEFUL_FINAL.tex",
+      "sha256": "02c5cb7aa03ba6fae5497e878c3598b051c644ca060061a260c040c85cd2aa72",
+      "bytes": 21362
+    },
+    {
+      "source": "PAPER_2/PAPER_2_BETTER_THAN_NULL_IS_NOT_YET_USEFUL_PUBLIC_FINAL_QA_V4.pdf",
+      "destination": "papers/paper-2/PAPER_2_BETTER_THAN_NULL_IS_NOT_YET_USEFUL_FINAL.pdf",
+      "sha256": "8718c1755aa3947bafd6974c7ffa99d965692c6cae6f4be1d5166669d3cfd183",
+      "bytes": 491253
+    },
+    {
+      "source": "PAPER_3/PAPER_3_AVAILABLE_EVIDENCE_IS_NOT_ENGINEERING_AUTHORITY_PUBLIC_FINAL_QA_V3.tex",
+      "destination": "papers/paper-3/PAPER_3_AVAILABLE_EVIDENCE_IS_NOT_ENGINEERING_AUTHORITY_FINAL.tex",
+      "sha256": "0057aee261b3fad8b5d44f961c1b4e7b7f579416eb96fa2019d0f3bf38ed0611",
+      "bytes": 31949
+    },
+    {
+      "source": "PAPER_3/PAPER_3_AVAILABLE_EVIDENCE_IS_NOT_ENGINEERING_AUTHORITY_PUBLIC_FINAL_QA_V3.pdf",
+      "destination": "papers/paper-3/PAPER_3_AVAILABLE_EVIDENCE_IS_NOT_ENGINEERING_AUTHORITY_FINAL.pdf",
+      "sha256": "20c508ff34cf17889b4fe6510936aeaf21e226d763dfd5a02ab6d49ddd843ca5",
+      "bytes": 477830
+    },
+    {
+      "source": "MONOGRAPH/GEATOMICA_FLAGSHIP_MONOGRAPH_PUBLIC_FINAL_QA_V3.tex",
+      "destination": "papers/monograph/GEATOMICA_FLAGSHIP_MONOGRAPH_FINAL.tex",
+      "sha256": "2292b25511ea0ab88a6fd5aed3d593829d9fc52a513e7a6c42326e35460b1fc1",
+      "bytes": 236962
+    },
+    {
+      "source": "MONOGRAPH/GEATOMICA_FLAGSHIP_MONOGRAPH_PUBLIC_FINAL_QA_V3.pdf",
+      "destination": "papers/monograph/GEATOMICA_FLAGSHIP_MONOGRAPH_FINAL.pdf",
+      "sha256": "faae8cae56730cb8a792056b940ef25e9af7f127d02583cf82eec19219b6e2cc",
+      "bytes": 1241499
+    },
+    {
+      "source": "MONOGRAPH/FINAL_QA_ENGINEERING_INSERT.tex",
+      "destination": "papers/monograph/FINAL_QA_ENGINEERING_INSERT.tex",
+      "sha256": "0d1d577601b4666a3054c05ee64cbb0667a63370fb50316539ca3774e3c6f443",
+      "bytes": 6533
+    },
+    {
+      "source": "MONOGRAPH/FINAL_QA_RUNTIME_INSERT.tex",
+      "destination": "papers/monograph/FINAL_QA_RUNTIME_INSERT.tex",
+      "sha256": "7c64f0057b7fe3ee3e976f39ad44feb825ec6e8829274feb1c9514e9cd4a3b53",
+      "bytes": 7855
+    },
+    {
+      "source": "TECHNICAL_COMPANION/EVIDENCE_STATE_RUNTIME_PUBLIC_TECHNICAL_INDUSTRIAL_COMPANION_V1_5_A4.tex",
+      "destination": "papers/technical-companion/EVIDENCE_STATE_RUNTIME_PUBLIC_TECHNICAL_INDUSTRIAL_COMPANION_V1_5_A4.tex",
+      "sha256": "fd90c3d6d320cc6f9ea9db4949a0821701e40c35a8bf6977b484a3640c04f6f1",
+      "bytes": 31299
+    },
+    {
+      "source": "TECHNICAL_COMPANION/EVIDENCE_STATE_RUNTIME_PUBLIC_TECHNICAL_INDUSTRIAL_COMPANION_V1_5_A4.pdf",
+      "destination": "papers/technical-companion/EVIDENCE_STATE_RUNTIME_PUBLIC_TECHNICAL_INDUSTRIAL_COMPANION_V1_5_A4.pdf",
+      "sha256": "84482c0c56cacf89d487f605aa0ff0cd59ec10aeca86cd2b9226091a0432ae6e",
+      "bytes": 402922
+    },
+    {
+      "source": "TECHNICAL_COMPANION/FINAL_QA_OPERATIONAL_INSERT.tex",
+      "destination": "papers/technical-companion/FINAL_QA_OPERATIONAL_INSERT.tex",
+      "sha256": "df31bfc20af4d9816e98badd877087d303c4398b753e8bde6716221ccb8f251d",
+      "bytes": 6871
+    },
+    {
+      "source": "EXPLAINER/MATERIALS_ML_FAILURE_ANALYSIS_WHAT_IT_IS_V2.tex",
+      "destination": "papers/explainer/MATERIALS_ML_FAILURE_ANALYSIS_WHAT_IT_IS_V2.tex",
+      "sha256": "5b2f3ef4efd3ba4d115e2fb6815ac63b7b3f081969d3fe7924fa6c4d59b099ed",
+      "bytes": 13866
+    },
+    {
+      "source": "EXPLAINER/MATERIALS_ML_FAILURE_ANALYSIS_WHAT_IT_IS_V2.pdf",
+      "destination": "papers/explainer/MATERIALS_ML_FAILURE_ANALYSIS_WHAT_IT_IS_V2.pdf",
+      "sha256": "59cdb1c216bb176b0358f3acdc2670a707b0d1098e4eb74ceea414d6da83d6e3",
+      "bytes": 263027
+    },
+    {
+      "source": "PAPER_1/figures/PAPER_1_BASELINE_REPEATABILITY.pdf",
+      "destination": "papers/paper-1/figures/PAPER_1_BASELINE_REPEATABILITY.pdf",
+      "sha256": "36c97969f405a219a4ed4a85c6bb688851a0a50de25df4adf4e8d349dfb25489",
+      "bytes": 19445
+    },
+    {
+      "source": "PAPER_1/figures/PAPER_1_FOLD_LEVEL_SPEARMAN_DISTRIBUTION.pdf",
+      "destination": "papers/paper-1/figures/PAPER_1_FOLD_LEVEL_SPEARMAN_DISTRIBUTION.pdf",
+      "sha256": "bdff3bcd89b25285ef95fb951643a5142802beb9bc0d387cd9bd7e5516649a01",
+      "bytes": 26660
+    },
+    {
+      "source": "PAPER_1/figures/PAPER_1_GROUP_REMOVAL_HEATMAP.pdf",
+      "destination": "papers/paper-1/figures/PAPER_1_GROUP_REMOVAL_HEATMAP.pdf",
+      "sha256": "5d8a0ad5f5787106f963e3413eeb7127753575b3ae100c9fa7e273049ae006b3",
+      "bytes": 23278
+    },
+    {
+      "source": "PAPER_1/figures/PAPER_1_GROUP_REMOVAL_TOP18_HEATMAP.pdf",
+      "destination": "papers/paper-1/figures/PAPER_1_GROUP_REMOVAL_TOP18_HEATMAP.pdf",
+      "sha256": "8d41f66a4575df8eb9f30a2f9b1c1fdee5638e18abda519589b055a53c0125df",
+      "bytes": 28827
+    },
+    {
+      "source": "PAPER_1/figures/PAPER_1_RANK_AGREEMENT.pdf",
+      "destination": "papers/paper-1/figures/PAPER_1_RANK_AGREEMENT.pdf",
+      "sha256": "66564de4b92be8350571ea17ca7cf769354888b18535d668650ebc86ae4567c8",
+      "bytes": 14626
+    },
+    {
+      "source": "PAPER_1/figures/PAPER_1_TOP10_CHANCE_REFERENCE.pdf",
+      "destination": "papers/paper-1/figures/PAPER_1_TOP10_CHANCE_REFERENCE.pdf",
+      "sha256": "525a42fd9dc747dfa6ea674ab1e209430f51d87a2c2adcb9be1fe9bc59815805",
+      "bytes": 13688
+    },
+    {
+      "source": "PAPER_2/figures/PAPER_2_MP_SAME_DENOMINATOR.pdf",
+      "destination": "papers/paper-2/figures/PAPER_2_MP_SAME_DENOMINATOR.pdf",
+      "sha256": "cf9e05c50134cc0e2276c89b043ac12fd86205d42ad9aa764d1fba8e6fcdd5e1",
+      "bytes": 22588
+    },
+    {
+      "source": "PAPER_2/figures/PAPER_2_TWO_DOOR_MAP.pdf",
+      "destination": "papers/paper-2/figures/PAPER_2_TWO_DOOR_MAP.pdf",
+      "sha256": "539834e3a1ce2f3edc40d4455ecf71dd6ce4aa9d7a554d13ec4da916c31ea610",
+      "bytes": 22151
+    },
+    {
+      "source": "PAPER_2/figures/PAPER_2_TWO_GATE_MAP_REVIEWER_HARDENED.pdf",
+      "destination": "papers/paper-2/figures/PAPER_2_TWO_GATE_MAP_REVIEWER_HARDENED.pdf",
+      "sha256": "1dbc70aa0da9f6ece8640fd52a7f798c7aabeef8bd703ef5039a83c1156ed7ca",
+      "bytes": 15509
+    },
+    {
+      "source": "PAPER_3/figures/PAPER_3_AI_BOUNDARY.pdf",
+      "destination": "papers/paper-3/figures/PAPER_3_AI_BOUNDARY.pdf",
+      "sha256": "a145e8b22a0601b54f07c0d865f1221e3c5c6804a5a3f523fbeaa1244f33e81a",
+      "bytes": 19732
+    },
+    {
+      "source": "PAPER_3/figures/PAPER_3_EVIDENCE_CHAIN.pdf",
+      "destination": "papers/paper-3/figures/PAPER_3_EVIDENCE_CHAIN.pdf",
+      "sha256": "7b79c2e14d0a3dc3d6245a5fa4af1ea5066bfff84df8e64c3f0208c2ede5c796",
+      "bytes": 22588
+    },
+    {
+      "source": "PAPER_3/figures/PAPER_3_MP_ADMISSION.pdf",
+      "destination": "papers/paper-3/figures/PAPER_3_MP_ADMISSION.pdf",
+      "sha256": "33a5ff786bfc7f7a5f2c6c210beca2342e796dbc201c33af56b6e9e195e8a95a",
+      "bytes": 17824
+    },
+    {
+      "source": "PAPER_3/figures/PAPER_3_REPLAY_STATES.pdf",
+      "destination": "papers/paper-3/figures/PAPER_3_REPLAY_STATES.pdf",
+      "sha256": "b175a6c9c7aa544df7181a3f93103a94cbcb475efebac73c0066a5c8b57d8324",
+      "bytes": 33836
+    },
+    {
+      "source": "MONOGRAPH/figures/jarvis_carrier_signal.pdf",
+      "destination": "papers/monograph/figures/jarvis_carrier_signal.pdf",
+      "sha256": "9f5a9acddd34e91204427064ca9deb7c46ae7065bb6f0c85427bfb29b5950c33",
+      "bytes": 100331
+    },
+    {
+      "source": "MONOGRAPH/figures/matbench_v03_fresh_baseline_r2.pdf",
+      "destination": "papers/monograph/figures/matbench_v03_fresh_baseline_r2.pdf",
+      "sha256": "b840e7702a09ab4c0cc1e7d38c2c496e0ced5bdfbe54105e2a6699b6eadba432",
+      "bytes": 21738
+    },
+    {
+      "source": "MONOGRAPH/figures/matbench_v03_importance_removal_spearman.pdf",
+      "destination": "papers/monograph/figures/matbench_v03_importance_removal_spearman.pdf",
+      "sha256": "cd8169450493424fc349496744ae47a8d9ecba533ce6159cf133481b4c61a4b3",
+      "bytes": 22261
+    },
+    {
+      "source": "MONOGRAPH/figures/matbench_v03_topk_overlap.pdf",
+      "destination": "papers/monograph/figures/matbench_v03_topk_overlap.pdf",
+      "sha256": "7e3c3afcef60632b4620fd36aa443cead2c2dfa0becfd1acb026a005496dbe38",
+      "bytes": 21797
+    },
+    {
+      "source": "MONOGRAPH/figures/mp_elastic_admission_flags.pdf",
+      "destination": "papers/monograph/figures/mp_elastic_admission_flags.pdf",
+      "sha256": "0bb242e66bdcbfd81d81d4b98111e6d61e18973e3fc6036a90bf76d760cf08e5",
+      "bytes": 63805
+    },
+    {
+      "source": "MONOGRAPH/figures/spatial_256_feature_conditioning.pdf",
+      "destination": "papers/monograph/figures/spatial_256_feature_conditioning.pdf",
+      "sha256": "8a8b6811750460ef890c4423d025ce6498c55815ee9b2522d8b490614f1239b5",
+      "bytes": 20127
+    },
+    {
+      "source": "MONOGRAPH/figures/spatial_256_fold_delta_r2.pdf",
+      "destination": "papers/monograph/figures/spatial_256_fold_delta_r2.pdf",
+      "sha256": "c51417b2b64c5a025ad121104cbb3bcd3c99e1b505af140d17ec8eff6afa513c",
+      "bytes": 21965
+    },
+    {
+      "source": "MONOGRAPH/figures/spatial_256_pooled_r2.pdf",
+      "destination": "papers/monograph/figures/spatial_256_pooled_r2.pdf",
+      "sha256": "bbd421e17c5c7b1efe8fc22053989f8f4d6583e67ac9f2c4b7e74f63b6e6bf8e",
+      "bytes": 20554
+    },
+    {
+      "source": "ALL_FINAL_QA_PDFS/EVIDENCE_STATE_RUNTIME_PUBLIC_TECHNICAL_INDUSTRIAL_COMPANION_V1_5_A4.pdf",
+      "destination": "papers/all-pdfs/EVIDENCE_STATE_RUNTIME_PUBLIC_TECHNICAL_INDUSTRIAL_COMPANION_V1_5_A4.pdf",
+      "sha256": "84482c0c56cacf89d487f605aa0ff0cd59ec10aeca86cd2b9226091a0432ae6e",
+      "bytes": 402922
+    },
+    {
+      "source": "ALL_FINAL_QA_PDFS/GEATOMICA_FLAGSHIP_MONOGRAPH_PUBLIC_FINAL_QA_V3.pdf",
+      "destination": "papers/all-pdfs/GEATOMICA_FLAGSHIP_MONOGRAPH_PUBLIC_FINAL_QA_V3.pdf",
+      "sha256": "faae8cae56730cb8a792056b940ef25e9af7f127d02583cf82eec19219b6e2cc",
+      "bytes": 1241499
+    },
+    {
+      "source": "ALL_FINAL_QA_PDFS/MATERIALS_ML_FAILURE_ANALYSIS_WHAT_IT_IS_V2.pdf",
+      "destination": "papers/all-pdfs/MATERIALS_ML_FAILURE_ANALYSIS_WHAT_IT_IS_V2.pdf",
+      "sha256": "59cdb1c216bb176b0358f3acdc2670a707b0d1098e4eb74ceea414d6da83d6e3",
+      "bytes": 263027
+    },
+    {
+      "source": "ALL_FINAL_QA_PDFS/PAPER_1_IMPORTANCE_IS_NOT_NECESSITY_PUBLIC_FINAL_QA_V4.pdf",
+      "destination": "papers/all-pdfs/PAPER_1_IMPORTANCE_IS_NOT_NECESSITY_PUBLIC_FINAL_QA_V4.pdf",
+      "sha256": "1ea1247f5fd39b648ce4cdfdfff3e7425f76e7f432a218f2fb544970a308e42d",
+      "bytes": 525322
+    },
+    {
+      "source": "ALL_FINAL_QA_PDFS/PAPER_2_BETTER_THAN_NULL_IS_NOT_YET_USEFUL_PUBLIC_FINAL_QA_V4.pdf",
+      "destination": "papers/all-pdfs/PAPER_2_BETTER_THAN_NULL_IS_NOT_YET_USEFUL_PUBLIC_FINAL_QA_V4.pdf",
+      "sha256": "8718c1755aa3947bafd6974c7ffa99d965692c6cae6f4be1d5166669d3cfd183",
+      "bytes": 491253
+    },
+    {
+      "source": "ALL_FINAL_QA_PDFS/PAPER_3_AVAILABLE_EVIDENCE_IS_NOT_ENGINEERING_AUTHORITY_PUBLIC_FINAL_QA_V3.pdf",
+      "destination": "papers/all-pdfs/PAPER_3_AVAILABLE_EVIDENCE_IS_NOT_ENGINEERING_AUTHORITY_PUBLIC_FINAL_QA_V3.pdf",
+      "sha256": "20c508ff34cf17889b4fe6510936aeaf21e226d763dfd5a02ab6d49ddd843ca5",
+      "bytes": 477830
+    },
+    {
+      "source": "ALL_FINAL_QA_PDFS/PDF_COLLECTION_RECEIPT.json",
+      "destination": "papers/all-pdfs/PDF_COLLECTION_RECEIPT.json",
+      "sha256": "700956f2adcb40e3bf62314c6de58fec07bacb9d60670ba19cd1b8a9fde20a02",
+      "bytes": 1292
+    }
+  ],
+  "copied_object_count": 43,
+  "scientific_change": "NONE_INTENDED",
+  "hardware_correction": "NVIDIA RTX 3060; founder-confirmed",
+  "publication_action": "NONE"
+}

@@ -1,0 +1,8 @@
+Copyright (c) 2026 Joseph Maxwell.
+
+No open-source licence is granted for the reference code in this release pending IP
+review. Public availability permits inspection but does not grant permission to copy,
+modify, distribute, sublicense or commercially reuse the code except as allowed by
+applicable law.
+
+Nothing in this file licenses private Systemica or Geatomica software.

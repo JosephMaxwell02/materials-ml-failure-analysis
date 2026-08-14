@@ -1,0 +1,9 @@
+measure,value,unit
+elastic_record_target_pairs,26056,pairs
+conditional,23891,pairs
+anomalous_or_unresolved,2165,pairs
+strongest_stable,0,pairs
+fresh_units,64,units
+replay_units,64,units
+replay_numeric_cells,37924,cells
+strict_tolerance_exceedances,916,cells

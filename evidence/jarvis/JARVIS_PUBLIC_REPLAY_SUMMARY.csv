@@ -1,0 +1,10 @@
+measure,value,unit,evidence_state
+source_census,75993,records,MEASURED
+common_cohort,23824,records,MEASURED
+fresh_units,48,units,MEASURED
+replay_units,48,units,REPLAYED
+numeric_cells_compared,28248,cells,REPLAYED
+maximum_absolute_delta,1.07e-14,numeric,REPLAYED
+raw_byte_divergent_files,60,of_192,REPLAYED
+runtime,9.93,hours,MEASURED
+bounded_cpu_workers,8,workers,MEASURED

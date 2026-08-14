@@ -1,0 +1,5 @@
+Copyright (c) 2026 Joseph Maxwell. All rights reserved unless otherwise stated.
+
+Public availability permits reading, citation and scholarly inspection; no additional
+licence is granted beyond applicable law and the rights explicitly stated in individual
+files.

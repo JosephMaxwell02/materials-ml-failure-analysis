@@ -1,0 +1,63 @@
+\section{Scientific units, fits, and accepted boundaries}
+\callout{Scientific unit.}{The smallest contract-bound part of a declared experiment that may complete independently. It binds scientific coordinates, required outputs, and execution identity; it commits only after output, schema, identity, and atomic-commit checks pass.}
+
+A unit is not a fixed quantity of computation. Matbench V0.2 makes the distinction concrete: 20 official-fold units each contained one baseline fit and five target-permutation refits, so \textbf{20 units represented 120 estimator fits}. Matbench V0.3 contained 20 baseline/perturbation, 2,840 individual-removal, and 580 group-removal units per identity. Spatial V0.6.1 contained 144 valid and 432 paired-null units per identity.
+
+\begin{center}\small\bfseries
+DECLARED UNIT $\rightarrow$ LOCAL STAGING $\rightarrow$ FILE/SCHEMA/IDENTITY/HASH CHECKS $\rightarrow$ ATOMIC COMMIT $\rightarrow$ JOURNAL/CHECKPOINT
+\end{center}
+Invalid or incomplete staging is retained as failure evidence and recomputed; it does not advance the checkpoint. \textbf{Resume from the last verified scientific boundary, not from the last visible file.}
+
+\section{Programme scale without a synthetic mega-number}
+\begin{tabularx}{\textwidth}{p{0.18\textwidth}r r r Y}
+\toprule Route & Fresh & Repeat/replay & Unit executions & Other evidenced work\\\midrule
+JARVIS & 48 & 48 & 96 & 28,248 numeric cells; 192 file pairs\\
+Materials Project & 64 & 64 & 128 & 37,924 cells; 916 elastic exceedances\\
+Matbench V0.2 & 20 & 0 & 20 & 120 estimator fits\\
+Matbench V0.3 & 3,440 & 3,440 & 6,880 & 6,880 fits; 65,740 cells\\
+Spatial V0.5 & 256 & 256 & 512 & exact declared replay\\
+Spatial V0.6.1 & 576 & 576 & 1,152 & 1,152 fits; 927,361 cells\\
+Other spatial predecessors & 28 & 20 & 48 & V0.1--V0.4 retained separately\\\midrule
+Total & 4,432 & 4,404 & 8,836 & Unlike objects remain separate\\\bottomrule
+\end{tabularx}
+
+Of the 4,404 later executions, 3,440 are same-environment repeat units and 964 are predecessor-linked replay units. At least 1,059,273 explicitly counted numeric fresh-to-repeat/replay cells were compared. Neither total is a model-operation count. Engineering evidence is also separate: 13 candidates, five descendants, 116 scenarios, 9,150 parameter/uncertainty runs, and at least 9,380 model operations.
+
+\section{Observed continuity on a shared workstation}
+The JARVIS replay was interrupted and resumed under the same identity; incomplete staging was rejected and recomputed. The Materials Project replay similarly retained only verified complete units across a later resume launch. A controlled-fixture matrix terminated child processes at 11 declared fault boundaries and recovered each fixture to three unique units. The latter is controller fault-injection evidence, not 11 scientific experiments.
+
+The principal workstation was shared rather than dedicated. Calendar time included ordinary use, review, interruption, and unknown gaps. It must not be reported as active runtime. Elapsed process time, summed unit wall time, committed-unit span, and calendar elapsed are different quantities. Spatial V0.6.1's 20.67 h fresh and 16.20 h replay values are committed-unit spans.
+
+\begin{center}\small\ttfamily
+[RUN] -- [ordinary use/review] -- [RUN] -- [interrupt/checkpoint] -- [RESUME] -- [analysis] -- [REPLAY]
+\end{center}
+
+\callout{Boundary.}{Resume tests continuation of one identity. Repeat creates a separately identified same-environment execution where applicable. Replay links a new identity to a predecessor under declared comparison contracts. Resume is not replication, and replay is not automatically external replication.}
+
+\section{Worked human-authority example: replay is not self-promotion}
+A chronologically separate post-replay transaction exercised the private implementation without changing historical run receipts.
+
+\begin{center}\small\bfseries
+EXECUTION $\rightarrow$ COMPARISON $\rightarrow$ CANDIDATE CLAIM $\rightarrow$ HUMAN DECISION $\rightarrow$ BOUNDED WRITE OR HOLD $\rightarrow$ READ-BACK
+\end{center}
+
+\begin{tabularx}{\textwidth}{p{0.21\textwidth}p{0.20\textwidth}YY}
+\toprule Test & Input & Observed control & Result\\\midrule
+No human confirmation & Eligible Matbench claim & Promotion gate refused before persistence & zero writes\\
+Explicit founder decision & Matbench and Spatial bulk bounded claims & Exact claim and ceiling persisted, predecessor retained, read-back matched & two bounded writes; no engineering action\\
+Ceiling violation & Spatial shear and MP elasticity strengthened beyond evidence & Claim-ceiling gate refused both attempts & zero positive promotions\\\bottomrule
+\end{tabularx}
+
+The accepted Matbench claim is limited to weak rank alignment under the frozen protocol and exact same-environment repeat. The accepted Spatial claim is limited to bulk metric geometry under two required views and exact local replay. Spatial shear remains conditional; Materials Project elasticity remains held. Execution completion may update execution memory, but only explicit human adjudication can update accepted scientific memory. Even then, engineering permission remains separate.
+
+\section{Engineering models behind the witnesses}
+\begin{tabularx}{\textwidth}{p{0.12\textwidth}p{0.20\textwidth}p{0.26\textwidth}YY}
+\toprule Case & Physical object & Native model & Failure exposed & Next test\\\midrule
+Furnace & High-temperature viewport/interface & Dominant-path thermal screening; six scenarios; 9,000 uncertainty samples; 9,120 operations & Geometry invalidated inherited result; cooling dependency; unresolved edge/frame path & guarded opaque coupon\\
+Dual tank & Reserve/feeder/recovery topology & Lumped flow/state model; typed transitions; 26 scenarios; 70 parameter cases & Recovered water collapsed into reserve; invalid return paths & low-pressure tracer rig\\
+Heat shield & Segmented transpiration coupon & Two-node transient thermal cells; Darcy-style flow; fault topology; 84 scenarios; 80 cases & Nominal cooling and fault localisation diverged & matched blocked/leak coupons\\\bottomrule
+\end{tabularx}
+
+The furnace route varied geometry, aperture, emissivity, contact and seal assumptions, hot-side boundary, cooling loss, and edge/frame transfer. The tank route separated source provenance, residence, return, gate, consumed, and contained states; its descendant improved an exploratory worst service margin from $-0.266$ to $-0.090$ without resolving final sizing. The heat-shield monolith produced a 175.3--389.5 K nominal reduction range, whereas the segmented descendant included $-83.5$ to 245.4 K while improving local fault information. These are bounded screening instruments, not physical validation.
+
+The technical contribution is the programme's design synthesis and engineering reduction, not a claim of literature-level novelty for every physical mechanism.
