@@ -13,6 +13,21 @@ publication-specific scripts that reconstruct the principal reported readouts.
 > Reusable orchestration, authority control, memory, progression, recovery and deployment
 > implementations are intentionally excluded.
 
+## Quick verification
+
+```bash
+git clone https://github.com/JosephMaxwell02/materials-ml-failure-analysis.git
+cd materials-ml-failure-analysis
+python tools/verify_manifest.py
+python reproduction/paper-1/reproduce.py
+python reproduction/paper-2/reproduce.py
+python reproduction/paper-3/reproduce.py
+```
+
+The scripts print reconstructed public readouts for inspection. They use accepted derived
+tables, perform no model fitting, require no external datasets and do not use the private
+production runtime. See [reproduction/README.md](reproduction/README.md) for detail.
+
 ## Three measured disagreements
 
 | **0.0394** | **73.3% -> 4.51%** | **927,361; max delta = 0** |
