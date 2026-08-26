@@ -1,0 +1,33 @@
+name: Repository verification
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out canonical repository tree
+        uses: actions/checkout@v7
+
+      - name: Set up Python 3.14
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.14"
+
+      - name: Verify Git-tree manifest
+        run: python tools/verify_manifest.py
+
+      - name: Reconstruct Paper 1 readouts
+        run: python reproduction/paper-1/reproduce.py
+
+      - name: Reconstruct Paper 2 readouts
+        run: python reproduction/paper-2/reproduce.py
+
+      - name: Inspect Paper 3 public evidence states
+        run: python reproduction/paper-3/reproduce.py

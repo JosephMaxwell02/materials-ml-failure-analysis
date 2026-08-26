@@ -1,0 +1,15 @@
+* text=auto eol=lf
+
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.zip binary
+*.npy binary
+*.npz binary
+
+# Preserve byte identities for frozen publication and accepted-evidence objects.
+papers/** -text
+evidence/** -text
+reproduction/**/data/** -text
+QA/*.json -text
