@@ -41,6 +41,26 @@ python reproduction/paper-2/reproduce.py
 python reproduction/paper-3/reproduce.py
 ```
 
+### Windows checkout path
+
+On Windows, cloning beneath a deeply nested parent directory can fail before any
+reconstruction runs because checkout paths exceed Git's default long-path handling. Use a
+short, writable destination and enable long paths for the clone command itself. For example,
+in Windows PowerShell:
+
+```powershell
+Set-Location C:\
+git -c core.longpaths=true clone https://github.com/JosephMaxwell02/materials-ml-failure-analysis.git C:\SYSTEMICA_RSE_COMPENDIUM_20261021
+Set-Location C:\SYSTEMICA_RSE_COMPENDIUM_20261021
+python tools/verify_manifest.py
+python reproduction/paper-1/reproduce.py
+python reproduction/paper-2/reproduce.py
+python reproduction/paper-3/reproduce.py
+```
+
+Choose another short writable path if that destination is unavailable. The command-scoped
+Git setting changes checkout handling only; it does not weaken manifest verification.
+
 These commands verify the maintained Git tree and reconstruct public readouts from
 accepted tables. See [reproduction/README.md](reproduction/README.md) for exact scope.
 

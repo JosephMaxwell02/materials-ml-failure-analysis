@@ -1,8 +1,11 @@
 # Geatomica monograph v1.0.1 correction record
 
-Date: 20 October 2026
+Original QA record date: 20 October 2026
 
-State: QA candidate; not deposited
+Original QA-stage state: QA candidate; not deposited
+
+Current state, 21 October 2026: publicly available as the maintained GitHub successor;
+not separately deposited to Zenodo
 
 Predecessor: `papers/monograph/GEATOMICA_FLAGSHIP_MONOGRAPH_FINAL.pdf` from archived compendium v1.0.0
 
